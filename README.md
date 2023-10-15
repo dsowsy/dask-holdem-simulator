@@ -3,12 +3,12 @@ An extensible Texas Hold'Em Simulator that can run at scale and use GPUs for cal
 
 # Introduction and Motivation
 
-About 20 years ago I learned TH at a startup I was working for. 
+About 20 years ago I learned Texas Hold'em at a startup I was working for. 
 
 I got it in my brain that I could make a bot, that would automatically play. 
-In that process, long before Sikuli and OpenCV. I wrote a brute force image recognition
+In that process (long before Sikuli and OpenCV) I wrote a brute force image recognition
 system, and handled simulation of movement with bezier curve calculations and modeled
-the game state, playing, cards, and rules with Java. I spent all my free time that I could thinking about it for about 5 years.  I never could figure out how to build an AI for it, and how to appropriately handle the decision-making. It was however my first really non-trivial foray into complex systems running on multiple CPUs and with multi-threading. 
+the game state, playing, cards, and rules with Java. I spent all my free time that I could thinking about it for about 5 years. I never could figure out how to build an AI for it, and how to appropriately handle the decision-making. It was however my first really non-trivial foray into complex systems running on multiple CPUs and with multi-threading. 
 
 Flash forward to 2023 and I’m taking GPU Specialization learning how to program CUDA.
 In 2022 I got to experiment with big data and redundant systems and got a taste for redundant
