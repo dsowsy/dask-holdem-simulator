@@ -83,8 +83,8 @@ https://github.com/numba/numba
 
 # What is actually needed to use the code: 
 
-`pip3 install "dask[complete]”`
-`pip3 install poker treys torch`
+```pip3 install "dask[complete]”
+pip3 install poker treys torch```
 
 
 # How To Run the Simulator (in separate terminals)
