@@ -20,7 +20,7 @@ The pie-in-the-sky-dream is to have thousands of instances of bots running on th
 logging the data, and learning from this behavior, collecting the data back and coming up
 with some interesting observations. 
 
-I spend a day researching some of the things I could do and settled on Dask. 
+I spent a day researching some of the things I could do and settled on Dask. 
 https://github.com/dask/dask
 
 
