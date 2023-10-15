@@ -47,9 +47,10 @@ https://en.wikipedia.org/wiki/Effective_hand_strength_algorithm
 - Hand Potential
 
 # Technology that I decided on using
+Dask - Parallel computing with task scheduling
 https://github.com/dask/dask
 
-A Python framework for poker related operations.
+poker - A Python framework for poker related operations.
 https://github.com/pokerregion/poker
 https://poker.readthedocs.io/en/latest/index.html
 
