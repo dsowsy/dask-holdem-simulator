@@ -86,12 +86,13 @@ https://github.com/numba/numba
 
 # How To Run the Simulator (in separate terminals)
 
-`dask scheduler`
-`python GameBoard.py` # Launch the game board and wait for players 30 second retry
-`python3 Player.py 1`      # Begin with the first player - Min 2
-`python3 Player.py 2`
-`python3 Player.py ..`
-`python3 Player.py 22` # Players > 22 are ignored, and the game will begin immediately.
-
+<p>
+`dask scheduler` <br>
+`python GameBoard.py` # Launch the game board and wait for players 30 second retry <br>
+`python3 Player.py 1` # Begin with the first player - Min 2 <br>
+`python3 Player.py 2` <br>
+`python3 Player.py ..`<br>
+`python3 Player.py 22` # Players > 22 are ignored, and the game will begin immediately. <br>
+</p>
 What is currently running on the GPU?
 - Well the non-functional hand strength and hand potential code seem to peg the GPU and hang.
