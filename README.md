@@ -24,6 +24,10 @@ with some interesting observations.
 I spent a day researching some of the things I could do and settled on Dask. 
 https://github.com/dask/dask
 
+# Obstacles encountered
+- Rule enforcement
+- Pub-sub communication
+- Lack of clarity in determining where and how to calculate hand strength and how if all AI players should be calculating hand strength at the same time to make the best use of GPU.
 
 Given my track record of taking on rather thorny multi-year projects and not completing them I figured I’d give myself hackathon conditions and see what I could come up with as a best-effort. 
 
@@ -83,8 +87,8 @@ https://github.com/numba/numba
 - Hand evaluator that uses and transforms a modified version of the results of Treys to make basic Player move decisions. 
 
 
-# What is actually needed to use the code: 
-```pip3 install "dask[complete] poker treys torch```
+# Dependencies needed to use the code: 
+```pip3 install "dask[complete] poker treys torch colorama```
 
 # How To Run the Simulator (in separate terminals)
 ```
@@ -96,5 +100,9 @@ https://github.com/numba/numba
  python3 Player.py 22 # Players > 22 are ignored, and the game will begin immediately. <br>
 ```
 
-What is currently running on the GPU?
-- Well the non-functional hand strength and hand potential code seem to peg the GPU and hang.
+# What is currently running on the GPU?
+- Hand strength and hand potential have been run and tested, but not perfect
+
+# What needs work
+- Game pot, and player money management
+- Betting strategy
