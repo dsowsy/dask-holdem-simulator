@@ -104,5 +104,11 @@ https://github.com/numba/numba
 - Hand strength and hand potential have been run and tested, but not perfect
 
 # What needs work
+- Code structure / organization and separation of concerns
 - Game pot, and player money management
+- Configurability of buy-in, blinds
 - Betting strategy
+- Verification of split pot outputs
+- Player leaving the game
+- Adding human players to join
+- CPU/GPU optimizations for calculation
