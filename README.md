@@ -1,5 +1,6 @@
 # dask-holdem-simulator
 An extensible Texas Hold'Em Simulator that can run at scale and use GPUs for calculations
+![dask-poker-simulation](https://github.com/dsowsy/dask-holdem-simulator/assets/978118/c2b58b58-32d3-4848-b4b7-c768b4e2a1e4)
 
 # Introduction and Motivation
 
