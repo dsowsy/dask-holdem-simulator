@@ -147,8 +147,8 @@ class Player:
         asyncio.create_task(self.listen_to_player_specific_messages())
 
         while True:
-            # await self.make_decision()
-            await asyncio.sleep(1)
+            await self.make_decision()
+            await asyncio.sleep(1)  # Add small delay to prevent busy waiting
 
     async def send_move(self, action, amount=None):
         if action == PlayerAction.RAISE:
@@ -157,8 +157,8 @@ class Player:
             self.pub.put({'action': action.value})
 
     async def make_decision(self):
-        if not len(self.cards) == 0:
-            # The player shouldn't be able to make a decision yet
+        if len(self.cards) == 0:
+            # The player shouldn't be able to make a decision without cards
             return
         if self.money <= 0:
             print(f"{self.worker_name} has no money left. Folding.")

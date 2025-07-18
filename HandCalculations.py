@@ -3,6 +3,7 @@ import random
 
 from utils import * # type: ignore
 from treys import Evaluator, Card
+from pokerlib_to_treys import convert_to_treys
 
 from collections import Counter
 from pokerlib_to_treys import *
@@ -226,8 +227,17 @@ def HandPotential(ourcards, boardcards):
 
 
 def evaluate_best_hand(player_cards, board_hand):
-    # Temporarily return a random hand strength between 1 and 7462
-    return random.randint(1, 7462)
+    # Use the actual Treys evaluator instead of random values
+    evaluator = Evaluator()
+    
+    # Convert cards to treys format
+    treys_player_cards = convert_to_treys(player_cards)
+    treys_board_hand = convert_to_treys(board_hand)
+    
+    # Evaluate the hand strength
+    hand_strength = evaluator.evaluate(treys_board_hand, treys_player_cards)
+    # Return the hand strength (lower is better in Treys, so we return as-is)
+    return hand_strength
 
 # Example usage:
 # ourcards = [0, 1]
