@@ -148,10 +148,9 @@ class GameBoard:
                 split_amount = self.pot // len(self.active_players)
                 for player in self.active_players:
                     self.pubs[player].put({'winner': player, 'amount_won': split_amount})
-
-            for winner in winners:
-                self.pubs[winner].put({'winner': winner, 'amount_won': self.pot})
-                print(f"{winner} splits the pot and receives {self.pot / len(winners)}!")
+            else:
+                # Winners already handled in determine_winner method
+                pass
 
             self.end_game()
             time.sleep(2)  # Sleep for 2 seconds
@@ -170,7 +169,7 @@ class GameBoard:
             while time_to_wait > 0:
                 try:
                     message = await asyncio.wait_for(self.join_sub.get(), timeout=1)
-                    print(f"Received message: {message}")  # Debug print
+                    # Process player join message
                     player, status = message.split(' ')  # Assuming "PlayerName joined" format
                     joined_players.add(player)
 
