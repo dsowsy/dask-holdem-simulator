@@ -1,0 +1,31 @@
+# Existing dependencies (inferred from code)
+torch
+treys
+poker
+distributed
+dask
+colorama
+
+# Computer Vision dependencies
+opencv-python==4.8.1.78
+numpy==1.24.3
+Pillow==10.0.0
+scikit-image==0.21.0
+
+# GUI automation dependencies
+pyautogui==0.9.54
+pynput==1.7.6
+keyboard==0.13.5
+
+# Machine Learning dependencies for card recognition
+tensorflow==2.13.0
+keras==2.13.1
+
+# Additional utilities
+pytesseract==0.3.10
+imutils==0.5.4
+matplotlib==3.7.2
+
+# Testing dependencies
+pytest==7.4.0
+pytest-asyncio==0.21.1
