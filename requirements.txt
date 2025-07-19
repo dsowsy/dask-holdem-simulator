@@ -12,6 +12,11 @@ numpy==1.24.3
 Pillow==10.0.0
 scikit-image==0.21.0
 
+# YOLO and Object Detection dependencies
+ultralytics>=8.0.0  # YOLOv5/YOLOv8 support
+thop>=0.1.1  # For model profiling and analysis
+seaborn>=0.11.0  # Enhanced visualizations
+
 # GUI automation dependencies
 pyautogui==0.9.54
 pynput==1.7.6
@@ -21,11 +26,22 @@ keyboard==0.13.5
 tensorflow==2.13.0
 keras==2.13.1
 
+# Performance monitoring and benchmarking
+psutil>=5.8.0  # System performance monitoring
+gputil>=1.4.0  # GPU monitoring and utilization
+memory-profiler>=0.60.0  # Memory usage profiling
+tqdm>=4.62.0  # Progress bars for benchmarking
+
 # Additional utilities
 pytesseract==0.3.10
 imutils==0.5.4
 matplotlib==3.7.2
+scipy>=1.7.0  # Scientific computing
+requests>=2.25.0  # For downloading YOLO models
+pandas>=1.3.0  # Data analysis for benchmarks
 
 # Testing dependencies
 pytest==7.4.0
+pytest-mock>=3.6.1  # Enhanced mocking for tests
+unittest-xml-reporting>=3.2.0  # XML test reports
 pytest-asyncio==0.21.1
